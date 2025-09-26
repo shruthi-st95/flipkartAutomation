@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flipkart Automation Suite"  >
+
+ 
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+
+  <test name="FlipKart_Automation">
+    <classes>
+      <class name="flipkarttest.LoginTest"/>
+      <class name="flipkarttest.SearchTest"/>
+      <class name="flipkarttest.AddToCartTest"/>
+       <class name="flipkarttest.ProductTest"/>
+        <class name="flipkarttest.LogoutTest"/>
+         
+    </classes>
+  </test>
+
+</suite>

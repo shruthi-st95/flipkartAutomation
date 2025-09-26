@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Flipkart Sequential Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Flipkart Test(failed)">
+    <classes>
+      <class name="flipkarttest.ProductTest">
+        <methods>
+          <include name="setup"/>
+          <include name="endToEndTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- flipkarttest.ProductTest -->
+      <class name="flipkarttest.AddToCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="searchDifferentProducts"/>
+        </methods>
+      </class> <!-- flipkarttest.AddToCartTest -->
+      <class name="flipkarttest.SearchTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="searchDifferentProducts"/>
+        </methods>
+      </class> <!-- flipkarttest.SearchTest -->
+    </classes>
+  </test> <!-- Flipkart Test(failed) -->
+</suite> <!-- Failed suite [Flipkart Sequential Suite] -->
